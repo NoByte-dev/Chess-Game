@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.chess-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkslategray;
+  width: 100vw;
+  height: 100vh;
+}
+
+.square {
+  background-color: #EEEED2;
+  width: 60px;
+  height: 60px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.main-board {
+  display: flex;
+  max-width: 480px;
+  max-height: 480px;
+  border-radius: 2%;
+  overflow: hidden;
+  box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.col-color:nth-of-type(odd) .square:nth-of-type(even){
+  background-color: #769656;
+}
+
+.col-color:nth-of-type(even) .square:nth-of-type(odd){
+  background-color: #769656;
+}
+
+img {
+  width: 95%;
+  height: 95%;
+  margin: auto;
+}
+
+img:hover {
+  filter: brightness(1.2);
+  width: 100%;
+  height: 100%;
+  lighting-color: rgba(255, 255, 255, 0.5);
+}
